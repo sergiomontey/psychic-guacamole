@@ -151,4 +151,4 @@ Use:
 
 ---
 
-🎥 For the full tutorial walkthrough, subscribe to [MonteyCodes YouTube Channel](https://www.youtube.com/@MonteyCodes)
+🎥 For the full tutorial walkthrough, subscribe to [MonteyCodes YouTube Channel](https://www.youtube.com/@sergiomontey)
