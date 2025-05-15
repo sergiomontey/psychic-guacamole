@@ -89,6 +89,12 @@ Then:
 - Note your SDK Location (default: `~/Library/Android/sdk`)
 
 ---
+### ⚠️ Important Reminder
+
+The .zshrc file is a configuration file for the Z shell (Zsh)
+
+A popular Unix shell that is often used as a more powerful alternative to Bash. 
+PATH modifications to include directories for tools like Node.js, Android SDK, or Expo
 
 ## 6. 🛠 Configure `.zshrc` for Android SDK
 
