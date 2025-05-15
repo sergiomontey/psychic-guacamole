@@ -152,3 +152,58 @@ Use:
 ---
 
 🎥 For the full tutorial walkthrough, subscribe to [MonteyCodes YouTube Channel](https://www.youtube.com/@sergiomontey)
+
+
+
+
+## 🧩 Xcode Not Detected Fix (React Native iOS Build Error)
+
+If you see an error like this when running `npx expo run:ios` or trying to open the iOS simulator:
+
+> **"Command failed: xcrun xcodebuild -workspace... Xcode is not installed or not configured properly."**
+
+### ✅ Step-by-Step Fix:
+
+1. **Ensure Xcode is Fully Installed:**
+   - Open the Mac App Store and search for **Xcode**
+   - If it says **"Open"**, you're good. If it says **"Get"**, download and install it.
+
+2. **Launch Xcode Once and Agree to Terms:**
+   - Open Xcode from the Applications folder
+   - Accept the license and install any required components
+
+3. **Manually Set the Developer Path:**
+
+```bash
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+```
+
+4. **Verify the Current Xcode Path:**
+
+```bash
+xcode-select -p
+```
+
+Expected output:
+
+```
+/Applications/Xcode.app/Contents/Developer
+```
+
+5. **Clear Expo Cache and Reinstall Dependencies (Optional):**
+
+```bash
+npx expo-cli cache:clear
+npm install
+# or
+yarn install
+```
+
+6. **Restart the Metro Bundler and Try Again:**
+
+```bash
+npx expo start
+npx expo run:ios
+```
+
+This should resolve Xcode detection issues for Expo or React Native builds on macOS.
